@@ -1,0 +1,255 @@
+{
+  "merge": {
+    "added": 40,
+    "updated": 5,
+    "unchanged": 0,
+    "total": 60
+  },
+  "source_logs": [
+    {
+      "source_id": "SRC001",
+      "source_name": "国家发展改革委—发展改革工作",
+      "start_url": "https://www.ndrc.gov.cn/fggz/",
+      "status": "ok",
+      "records": 0,
+      "elapsed_seconds": 0.95,
+      "attempted_at": "2026-08-17T09:13:44+00:00",
+      "error": ""
+    },
+    {
+      "source_id": "SRC002",
+      "source_name": "国家发展改革委—政策通知",
+      "start_url": "https://www.ndrc.gov.cn/xxgk/zcfb/tz/",
+      "status": "ok",
+      "records": 7,
+      "elapsed_seconds": 4.16,
+      "attempted_at": "2026-08-17T09:13:49+00:00",
+      "error": ""
+    },
+    {
+      "source_id": "SRC003",
+      "source_name": "国家能源局",
+      "start_url": "https://www.nea.gov.cn/",
+      "status": "ok",
+      "records": 1,
+      "elapsed_seconds": 1.51,
+      "attempted_at": "2026-08-17T09:13:50+00:00",
+      "error": ""
+    },
+    {
+      "source_id": "SRC004",
+      "source_name": "工业和信息化部",
+      "start_url": "https://www.miit.gov.cn/",
+      "status": "ok",
+      "records": 2,
+      "elapsed_seconds": 4.67,
+      "attempted_at": "2026-08-17T09:13:55+00:00",
+      "error": ""
+    },
+    {
+      "source_id": "SRC005",
+      "source_name": "商务部—开发区工作",
+      "start_url": "https://www.mofcom.gov.cn/",
+      "status": "ok",
+      "records": 1,
+      "elapsed_seconds": 2.45,
+      "attempted_at": "2026-08-17T09:13:58+00:00",
+      "error": ""
+    },
+    {
+      "source_id": "SRC006",
+      "source_name": "北京市发展改革委",
+      "start_url": "https://fgw.beijing.gov.cn/",
+      "status": "ok",
+      "records": 1,
+      "elapsed_seconds": 7.3,
+      "attempted_at": "2026-08-17T09:14:06+00:00",
+      "error": ""
+    },
+    {
+      "source_id": "SRC007",
+      "source_name": "北京经济技术开发区",
+      "start_url": "https://kfqgw.beijing.gov.cn/zwgkkfq/",
+      "status": "ok",
+      "records": 27,
+      "elapsed_seconds": 11.74,
+      "attempted_at": "2026-08-17T09:14:18+00:00",
+      "error": ""
+    },
+    {
+      "source_id": "SRC008",
+      "source_name": "甘肃省发展改革委",
+      "start_url": "https://fzgg.gansu.gov.cn/",
+      "status": "failed",
+      "records": 0,
+      "elapsed_seconds": 0,
+      "attempted_at": "2026-08-17T09:14:26+00:00",
+      "error": "HTTPError: HTTP Error 412: Precondition Failed"
+    },
+    {
+      "source_id": "SRC009",
+      "source_name": "广东省发展改革委",
+      "start_url": "https://drc.gd.gov.cn/",
+      "status": "ok",
+      "records": 3,
+      "elapsed_seconds": 7.23,
+      "attempted_at": "2026-08-17T09:14:33+00:00",
+      "error": ""
+    },
+    {
+      "source_id": "SRC010",
+      "source_name": "福建省工业和信息化厅",
+      "start_url": "https://gxt.fujian.gov.cn/zwgk/xw/hydt/xydt/",
+      "status": "ok",
+      "records": 2,
+      "elapsed_seconds": 8.46,
+      "attempted_at": "2026-08-17T09:14:42+00:00",
+      "error": ""
+    },
+    {
+      "source_id": "SRC011",
+      "source_name": "中国政府网—政策",
+      "start_url": "https://www.gov.cn/zhengce/",
+      "status": "ok",
+      "records": 0,
+      "elapsed_seconds": 0.35,
+      "attempted_at": "2026-08-17T09:14:43+00:00",
+      "error": ""
+    },
+    {
+      "source_id": "SRC012",
+      "source_name": "生态环境部",
+      "start_url": "https://www.mee.gov.cn/",
+      "status": "ok",
+      "records": 1,
+      "elapsed_seconds": 1.5,
+      "attempted_at": "2026-08-17T09:14:45+00:00",
+      "error": ""
+    }
+  ],
+  "source_health": {
+    "updated_at": "2026-08-17T09:14:45+00:00",
+    "sources": {
+      "SRC001": {
+        "source_name": "国家发展改革委—发展改革工作",
+        "status": "healthy",
+        "consecutive_failures": 0,
+        "last_attempt": "2026-08-17T09:13:44+00:00",
+        "last_success": "2026-08-17T09:13:44+00:00",
+        "last_record_count": 0,
+        "last_error": "",
+        "start_url": "https://www.ndrc.gov.cn/fggz/"
+      },
+      "SRC002": {
+        "source_name": "国家发展改革委—政策通知",
+        "status": "healthy",
+        "consecutive_failures": 0,
+        "last_attempt": "2026-08-17T09:13:49+00:00",
+        "last_success": "2026-08-17T09:13:49+00:00",
+        "last_record_count": 7,
+        "last_error": "",
+        "start_url": "https://www.ndrc.gov.cn/xxgk/zcfb/tz/"
+      },
+      "SRC003": {
+        "source_name": "国家能源局",
+        "status": "healthy",
+        "consecutive_failures": 0,
+        "last_attempt": "2026-08-17T09:13:50+00:00",
+        "last_success": "2026-08-17T09:13:50+00:00",
+        "last_record_count": 1,
+        "last_error": "",
+        "start_url": "https://www.nea.gov.cn/"
+      },
+      "SRC004": {
+        "source_name": "工业和信息化部",
+        "status": "healthy",
+        "consecutive_failures": 0,
+        "last_attempt": "2026-08-17T09:13:55+00:00",
+        "last_success": "2026-08-17T09:13:55+00:00",
+        "last_record_count": 2,
+        "last_error": "",
+        "start_url": "https://www.miit.gov.cn/"
+      },
+      "SRC005": {
+        "source_name": "商务部—开发区工作",
+        "status": "healthy",
+        "consecutive_failures": 0,
+        "last_attempt": "2026-08-17T09:13:58+00:00",
+        "last_success": "2026-08-17T09:13:58+00:00",
+        "last_record_count": 1,
+        "last_error": "",
+        "start_url": "https://www.mofcom.gov.cn/"
+      },
+      "SRC006": {
+        "source_name": "北京市发展改革委",
+        "status": "healthy",
+        "consecutive_failures": 0,
+        "last_attempt": "2026-08-17T09:14:06+00:00",
+        "last_success": "2026-08-17T09:14:06+00:00",
+        "last_record_count": 1,
+        "last_error": "",
+        "start_url": "https://fgw.beijing.gov.cn/"
+      },
+      "SRC007": {
+        "source_name": "北京经济技术开发区",
+        "status": "healthy",
+        "consecutive_failures": 0,
+        "last_attempt": "2026-08-17T09:14:18+00:00",
+        "last_success": "2026-08-17T09:14:18+00:00",
+        "last_record_count": 27,
+        "last_error": "",
+        "start_url": "https://kfqgw.beijing.gov.cn/zwgkkfq/"
+      },
+      "SRC008": {
+        "source_name": "甘肃省发展改革委",
+        "status": "failed",
+        "consecutive_failures": 1,
+        "last_attempt": "2026-08-17T09:14:26+00:00",
+        "last_success": null,
+        "last_record_count": 0,
+        "last_error": "HTTPError: HTTP Error 412: Precondition Failed",
+        "start_url": "https://fzgg.gansu.gov.cn/"
+      },
+      "SRC009": {
+        "source_name": "广东省发展改革委",
+        "status": "healthy",
+        "consecutive_failures": 0,
+        "last_attempt": "2026-08-17T09:14:33+00:00",
+        "last_success": "2026-08-17T09:14:33+00:00",
+        "last_record_count": 3,
+        "last_error": "",
+        "start_url": "https://drc.gd.gov.cn/"
+      },
+      "SRC010": {
+        "source_name": "福建省工业和信息化厅",
+        "status": "healthy",
+        "consecutive_failures": 0,
+        "last_attempt": "2026-08-17T09:14:42+00:00",
+        "last_success": "2026-08-17T09:14:42+00:00",
+        "last_record_count": 2,
+        "last_error": "",
+        "start_url": "https://gxt.fujian.gov.cn/zwgk/xw/hydt/xydt/"
+      },
+      "SRC011": {
+        "source_name": "中国政府网—政策",
+        "status": "healthy",
+        "consecutive_failures": 0,
+        "last_attempt": "2026-08-17T09:14:43+00:00",
+        "last_success": "2026-08-17T09:14:43+00:00",
+        "last_record_count": 0,
+        "last_error": "",
+        "start_url": "https://www.gov.cn/zhengce/"
+      },
+      "SRC012": {
+        "source_name": "生态环境部",
+        "status": "healthy",
+        "consecutive_failures": 0,
+        "last_attempt": "2026-08-17T09:14:45+00:00",
+        "last_success": "2026-08-17T09:14:45+00:00",
+        "last_record_count": 1,
+        "last_error": "",
+        "start_url": "https://www.mee.gov.cn/"
+      }
+    }
+  }
+}
