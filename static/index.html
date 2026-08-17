@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="面向经济技术开发区的零碳园区公开数据、自动报告、差距核算和项目可行性分析平台。">
+  <meta name="theme-color" content="#f5f2ea">
+  <title>园区碳观察｜零碳园区公共数据与实施决策平台</title>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="#top" aria-label="返回首页">
+    <span class="brand-mark">园</span>
+    <span><strong>园区碳观察</strong><small>公开数据与实施决策</small></span>
+  </a>
+  <nav class="topnav" aria-label="主要导航">
+    <a href="#map">园区现场</a>
+    <a href="#today">今日动态</a>
+    <a href="#analytics">数据分析</a>
+    <a href="#workbench">五问工作台</a>
+    <a href="#database">资料库</a>
+    <a href="#reports">自动报告</a>
+  </nav>
+  <div class="top-actions">
+    <a class="quiet-link" href="docs/user-manual.html">使用说明</a>
+    <a class="btn btn-dark" href="reports/weekly-latest.html">查看本周报告</a>
+  </div>
+</header>
+
+<main id="top">
+  <section id="map" class="section map-section">
+    <div class="section-kicker">PARK CONSTRUCTION LANDSCAPE</div>
+    <div class="section-head split-head">
+      <div>
+        <h1>零碳园区建设现场</h1>
+        <p>点位对应公开建设名单或国际参考案例。点位用于导航，不代表园区法定四至边界；点击后可查看产业类型、建设周期、公开事实及资料来源。</p>
+      </div>
+      <div class="segmented" role="group" aria-label="地图范围">
+        <button type="button" class="map-filter active" data-map-filter="全国">全国</button>
+        <button type="button" class="map-filter" data-map-filter="国家级">国家级</button>
+        <button type="button" class="map-filter" data-map-filter="广东">广东</button>
+        <button type="button" class="map-filter" data-map-filter="全球">全球案例</button>
+      </div>
+    </div>
+    <div class="map-grid">
+      <div class="map-card">
+        <div class="map-toolbar">
+          <strong id="mapCount">读取中…</strong>
+          <label>查找园区<input id="mapSearch" type="search" placeholder="园区、省份、城市或产业"></label>
+          <button id="mapReset" class="btn btn-line" type="button">复位</button>
+        </div>
+        <div id="mapCanvas" class="map-canvas" aria-label="园区地图">
+          <img id="mapImage" src="assets/china_map_light.png" alt="中国园区地图背景">
+          <div id="mapMarkers" class="map-markers"></div>
+        </div>
+        <div class="map-legend"><span><i class="dot national"></i>国家级建设名单</span><span><i class="dot provincial"></i>省级建设名单</span><span><i class="dot international"></i>国际参考案例</span></div>
+      </div>
+      <aside id="parkDetail" class="detail-card" aria-live="polite">
+        <div class="detail-placeholder"><span class="eyebrow">园区档案</span><h2>选择地图点位</h2><p>这里显示园区建设范围、产业结构、公开事实、数据边界和原始来源。</p></div>
+      </aside>
+    </div>
+  </section>
+
+  <section class="section hero-section">
+    <div class="hero-copy">
+      <div class="section-kicker">PUBLIC DATA, NOT A ONE-OFF DASHBOARD</div>
+      <h2>先把公开信息做成可追溯的数据，再讨论评价、改造和投资。</h2>
+      <p>平台面向经济技术开发区及园中园，持续整理公开政策、园区实践、技术设施和项目条件。公开资料可用于发现线索、比较结构和提出补数任务；正式核算只接受同一边界、同一年度、可追溯的园区台账。</p>
+      <div class="principle-row"><span>不以市级数据代替园区数据</span><span>不把建设名单写成达标排名</span><span>不把绿电当作唯一减排路径</span></div>
+      <div class="update-status"><span class="pulse"></span><span id="updateSchedule">自动更新状态读取中…</span></div>
+    </div>
+    <div class="dataset-card">
+      <div class="dataset-label">当前公开数据快照</div>
+      <div class="dataset-version">最新记录 <strong id="dataVersion">—</strong></div>
+      <div id="kpiGrid" class="kpi-grid"></div>
+      <div class="dataset-note">数字反映数据工作量与证据状态，不代表园区建设绩效。</div>
+    </div>
+  </section>
+
+  <section id="today" class="section">
+    <div class="section-kicker">PARK & POLICY UPDATES</div>
+    <div class="section-head split-head">
+      <div><h2>今日与近期重要动态</h2><p>按发布时间、来源可靠性和园区相关性整理。摘要用于定位问题，涉及关键数字和实施条件时应回到原文核验。</p></div>
+      <div class="inline-actions"><div id="updateFilters" class="topic-filters" aria-label="动态分类"></div><a class="btn btn-line" href="reports/daily-latest.html">查看日报</a></div>
+    </div>
+    <div id="updatesGrid" class="updates-grid"></div>
+    <button id="showMoreUpdates" class="btn btn-line centered" type="button">显示更多动态</button>
+  </section>
+
+  <section id="analytics" class="section analytics-section">
+    <div class="section-kicker">PUBLIC DATA ANALYTICS</div>
+    <div class="section-head"><h2>公开数据工作本身</h2><p>这里展示样本结构、来源覆盖和证据漏斗，不把网页采集频次解释为园区真实绩效。技术重点是园区实体映射、规范URL去重、边界核验、事实分层、来源健康和版本留痕。</p></div>
+    <div class="analytics-grid">
+      <article class="chart-card"><h3>园区省份分布</h3><p>用于安排分省补源，不代表省份建设水平。</p><div id="provinceChart" class="bar-chart"></div></article>
+      <article class="chart-card"><h3>产业结构分布</h3><p>用于选择结构同行和技术设施，不直接等同于绩效。</p><div id="industryChart" class="bar-chart compact"></div></article>
+      <article class="chart-card"><h3>动态主题结构</h3><p>反映当前档案样本中政策、园区和设施议题的构成。</p><div id="topicChart" class="bar-chart compact"></div></article>
+      <article class="chart-card"><h3>来源健康</h3><p>单一来源失败不会阻断其他来源；连续失败会进入观察或隔离。</p><div id="sourceHealth" class="health-grid"></div></article>
+      <article class="chart-card wide"><h3>证据漏斗</h3><p>只有对象、年份、边界、单位和原始材料均完成核验的数据才进入正式核算。</p><div id="funnelChart" class="funnel-chart"></div></article>
+    </div>
+  </section>
+
+  <section id="workbench" class="section diagnosis-section">
+    <div class="section-kicker">FIVE PRACTICAL QUESTIONS</div>
+    <div class="section-head"><h2>只围绕园区最实际的五个问题</h2><p>数据不齐时先生成责任明确的补数任务；数据齐备后再核算现状、识别差距、筛选设施并形成预算约束下的项目组合。</p></div>
+    <div class="five-tabs" role="tablist" aria-label="五问工作台">
+      <button class="five-tab active" type="button" data-panel="data-ready" role="tab">1 数据够不够</button>
+      <button class="five-tab" type="button" data-panel="current-state" role="tab">2 现状是什么</button>
+      <button class="five-tab" type="button" data-panel="gap" role="tab">3 差距在哪里</button>
+      <button class="five-tab" type="button" data-panel="reduce" role="tab">4 怎么减</button>
+      <button class="five-tab" type="button" data-panel="cost" role="tab">5 花多少钱</button>
+    </div>
+
+    <div id="data-ready" class="diagnosis-panel active" role="tabpanel">
+      <div class="panel-intro"><div><span class="eyebrow">问题一</span><h3>数据够不够</h3><p>按边界、组织、能源、排放、经济、资源和项目参数检查。缺失项自动转成带责任部门、最低材料和时限的任务。</p></div><div class="score-card"><strong id="readinessScore">0%</strong><span>当前数据准备度</span><small id="readinessNote">尚未勾选已提供字段</small></div></div>
+      <div class="toolbar-row"><button id="checkAllP0" class="btn btn-dark" type="button">标记全部P0已提供</button><button id="clearChecklist" class="btn btn-line" type="button">清空勾选</button><button id="generateTasks" class="btn btn-accent" type="button">生成补数任务</button><button id="exportTasks" class="btn btn-line" type="button">导出任务CSV</button></div>
+      <div class="data-grid-layout"><div id="fieldChecklist" class="checklist"></div><div class="task-output"><h4>补数任务</h4><div id="taskList" class="empty-state">点击“生成补数任务”后显示。</div></div></div>
+    </div>
+
+    <div id="current-state" class="diagnosis-panel" role="tabpanel">
+      <div class="panel-intro"><div><span class="eyebrow">问题二</span><h3>现状是什么</h3><p>从园区名录、公开事实和产业结构出发形成资料画像。公开报道中的数字保留限制说明，不自动进入正式指标。</p></div></div>
+      <div class="current-grid"><div class="form-card"><label>选择园区<select id="stateParkSelect"></select></label><div class="lens-label">查看视角</div><div id="lensButtons" class="lens-buttons"></div><button id="exportParkProfile" class="btn btn-line full" type="button">导出园区资料卡</button></div><div id="currentProfile" class="profile-card"></div><div id="similarParks" class="similar-card"></div></div>
+    </div>
+
+    <div id="gap" class="diagnosis-panel" role="tabpanel">
+      <div class="panel-intro"><div><span class="eyebrow">问题三</span><h3>差距在哪里</h3><p>依据国家级零碳园区试行指标体系计算。没有同边界、同年度数据时只给数据指南，不输出达标结论。</p></div></div>
+      <div class="gap-grid">
+        <form id="gapForm" class="form-card form-grid" onsubmit="return false">
+          <label class="check-line"><input id="boundaryConfirmed" type="checkbox">已确认同一园区边界和同一自然年</label>
+          <label>年综合能源消费量（tce）<input id="energyTotal" type="number" min="0" step="1" placeholder="例如 800000"></label>
+          <label>范围一排放（tCO₂）<input id="scope1Total" type="number" min="0" step="1"></label>
+          <label>范围二排放（tCO₂）<input id="scope2Total" type="number" min="0" step="1"></label>
+          <label>工业过程排放（tCO₂，可为0）<input id="processTotal" type="number" min="0" step="1"></label>
+          <label>清洁能源消费占比（%）<input id="cleanEnergy" type="number" min="0" max="100" step="0.1"></label>
+          <label>产品单位能耗对标结果<select id="productEnergy"><option value="">请选择</option><option value="达标">达到或优于二级能耗限额</option><option value="未达标">未达到二级能耗限额</option><option value="不适用">客观条件不适用</option></select></label>
+          <label>工业固废综合利用率（%）<input id="solidWaste" type="number" min="0" max="100" step="0.1"></label>
+          <label>余热/余冷/余压综合利用率（%）<input id="wasteEnergy" type="number" min="0" max="100" step="0.1"></label>
+          <label>工业用水重复利用率（%）<input id="waterReuse" type="number" min="0" max="100" step="0.1"></label>
+          <div class="form-actions"><button id="loadGapDemo" class="btn btn-line" type="button">载入演示值</button><button id="clearGap" class="btn btn-line" type="button">清空</button><button id="runGap" class="btn btn-dark" type="button">开始核算</button></div>
+        </form>
+        <div class="result-card"><div class="result-head"><h4>指标差距</h4><button id="exportGap" class="btn btn-line" type="button">导出结果</button></div><div id="gapResult" class="empty-state">填入数据并确认边界后开始核算。</div></div>
+      </div>
+    </div>
+
+    <div id="reduce" class="diagnosis-panel" role="tabpanel">
+      <div class="panel-intro"><div><span class="eyebrow">问题四</span><h3>怎么减</h3><p>优先选择对多数主体都有效、对外部制度依赖较小的无悔工作；绿电直连、储能、氢能和深度工艺改造按条件进入专项可研。</p></div></div>
+      <div class="green-power-note"><strong>绿电不是默认第一步。</strong><span>实施前至少核对资源与负荷匹配、网架安全、直接消纳、计量结算、项目主体、交易责任和环境属性归属。</span><a href="https://www.nea.gov.cn/20260520/9e1c4277ce324c8ab82a84da98da7980/c.html" target="_blank" rel="noopener">查看政策原文 ↗</a></div>
+      <div class="measure-toolbar"><label>措施类型<select id="measureType"><option value="全部">全部</option><option value="无悔型">无悔型</option><option value="条件型">条件型</option><option value="战略型">战略型</option></select></label><label>方向<select id="measureDirection"><option value="全部">全部方向</option></select></label><label class="search-field">搜索<input id="measureSearch" type="search" placeholder="工艺、设备或措施"></label><button id="selectNoRegret" class="btn btn-dark" type="button">勾选全部无悔型</button><button id="clearMeasures" class="btn btn-line" type="button">清空</button><button id="exportMeasures" class="btn btn-accent" type="button">导出措施清单</button></div>
+      <div id="measureSummary" class="selection-summary">尚未选择措施。</div><div id="measuresGrid" class="measures-grid"></div>
+    </div>
+
+    <div id="cost" class="diagnosis-panel" role="tabpanel">
+      <div class="panel-intro"><div><span class="eyebrow">问题五</span><h3>花多少钱</h3><p>录入项目投资、年度减排、年度收益、寿命和前置条件，形成预算约束下的项目组合和年度路径，并自动生成可行性初筛报告。</p></div></div>
+      <div class="feasibility-gate">
+        <label><input id="feasBoundary" type="checkbox">边界已确认</label><label><input id="feasEnterprise" type="checkbox">企业清单已确认</label><label>园区名称<input id="feasParkName" type="text" value="示范经济技术开发区"></label><label>基准年<input id="feasYear" type="number" value="2025"></label>
+      </div>
+      <div class="cost-controls"><label>预算上限（万元）<input id="budgetLimit" type="number" min="0" value="35000"></label><label>年度减排目标（tCO₂）<input id="abatementTarget" type="number" min="0" value="50000"></label><label>折现率（%）<input id="discountRate" type="number" min="0" max="30" step="0.1" value="5"></label><button id="loadProjectDemo" class="btn btn-line" type="button">载入演示项目</button><button id="addProject" class="btn btn-line" type="button">新增项目</button><label class="btn btn-line file-btn">导入JSON<input id="projectFile" type="file" accept=".json,application/json"></label><button id="downloadProjectTemplate" class="btn btn-line" type="button">下载模板</button><button id="runFeasibility" class="btn btn-dark" type="button">运行可行性分析</button></div>
+      <div class="project-table-wrap"><table class="data-table project-table"><thead><tr><th>项目</th><th>类型</th><th>投资/万元</th><th>年减排/tCO₂</th><th>年节省/万元</th><th>年运维/万元</th><th>寿命/年</th><th>实施年</th><th>参数证据</th><th>操作</th></tr></thead><tbody id="projectTableBody"></tbody></table></div>
+      <div class="portfolio-grid"><div class="result-card"><div class="result-head"><h4>项目组合与可行性</h4><button id="downloadFeasibilityReport" class="btn btn-line" type="button">下载报告</button></div><div id="feasibilityResult" class="empty-state">录入数据与项目后点击“运行可行性分析”。数据门槛未通过时只生成补数任务。</div></div><div class="result-card"><h4>利益相关方与年度路径</h4><div id="pathResult" class="empty-state">组合形成后显示投资、收益、责任和阶段路径。</div></div></div>
+    </div>
+  </section>
+
+  <section id="database" class="section database-section">
+    <div class="section-kicker">SEARCHABLE PUBLIC DATABASE</div>
+    <div class="section-head split-head"><div><h2>公开资料库</h2><p>可检索园区名录、动态记录、政策标准和减排设施。每条记录保留来源入口或用途边界。</p></div><div class="db-controls"><input id="dbSearch" type="search" placeholder="搜索园区、地区、产业、政策或设施"><select id="dbType"><option value="全部">全部类型</option><option value="园区">园区名录</option><option value="动态">动态档案</option><option value="标准">政策标准</option><option value="措施">减排设施</option></select><button id="dbRun" class="btn btn-dark" type="button">检索</button><button id="dbClear" class="btn btn-line" type="button">清空</button><button id="downloadArchive" class="btn btn-line" type="button">下载公开档案</button></div></div>
+    <div id="dbStatus" class="db-status"></div><div class="db-table-wrap"><table class="data-table"><thead><tr><th>类型</th><th>日期/地区</th><th>记录</th><th>用途或限制</th><th>来源</th></tr></thead><tbody id="archiveTable"></tbody></table></div><button id="dbMore" class="btn btn-line centered" type="button">显示更多记录</button>
+  </section>
+
+  <section id="reports" class="section report-section">
+    <div class="section-kicker">AUTOMATIC REPORTS</div>
+    <div class="section-head"><h2>自动报告与开放文件</h2><p>每次定时更新后自动重建日报、周报、数据快照和示范可行性报告。质量门禁失败时不覆盖上一版成功网站。</p></div>
+    <div id="reportLinks" class="report-grid"></div>
+    <div class="open-source-strip"><div><strong>开源运行方式</strong><p>仓库包含采集、归档、报告、可行性分析、静态导出、测试和GitHub Pages发布流程。</p></div><a id="issueLink" class="btn btn-dark" href="docs/user-manual.html#data-correction" target="_blank" rel="noopener">提交数据更正</a><a class="btn btn-line" href="docs/technical.html">查看技术说明</a></div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div><strong>园区碳观察</strong><p>面向经济技术开发区的公开数据、标准差距与项目可行性工具。</p></div>
+  <div class="footer-links"><a href="data/park_catalog.csv" download>园区名录</a><a href="data/required_data_fields.csv" download>数据字段</a><a href="data/technology_guidance.csv" download>设施指南</a><a href="data/standard_rules.csv" download>政策标准</a><a href="data/archive.jsonl" download>滚动档案</a><a href="docs/user-manual.html">使用说明</a></div>
+  <div class="footer-note">数据版本 <span id="footerVersion">—</span> · 正式决策前核验原始文件、统计边界和计算口径。</div>
+</footer>
+<div id="toast" class="toast" role="status" aria-live="polite"></div>
+<script src="app.js" defer></script>
+</body>
+</html>

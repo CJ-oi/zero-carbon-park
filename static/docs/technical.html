@@ -1,0 +1,11 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>技术说明｜园区碳观察</title><link rel="stylesheet" href="../styles.css"><style>.doc{max-width:1040px;margin:0 auto;padding:52px 24px 90px}.doc h1{font-size:38px}.doc h2{margin-top:42px;padding-top:22px;border-top:1px solid var(--line)}.doc pre{overflow:auto;background:#ecefe9;padding:18px;border:1px solid var(--line)}.doc li{margin:7px 0}.back{display:inline-flex;margin-bottom:24px}</style></head><body><main class="doc"><a class="btn btn-line back" href="../index.html">← 返回网站</a><h1>技术说明</h1><p class="lead">本项目由公开来源采集、滚动档案、园区实体映射、核算与项目组合、自动报告、质量门禁和静态发布组成。</p><h2>运行结构</h2><pre>公开来源与园区数据
+        ↓
+来源健康、URL规范化与版本化
+        ↓
+园区实体映射、证据分层
+        ↓
+五问工作台与可行性计算
+        ↓
+日报、周报、可行性报告
+        ↓
+质量门禁与GitHub Pages发布</pre><h2>自动更新</h2><p>推送到主分支、手动触发或定时任务都会运行测试、同步公开来源、重建网站和报告。单个来源失败不会中断其他来源；连续失败会进入观察或隔离。</p><h2>数据门槛</h2><p>正式核算前必须确认园区名称、边界、企业清单、基准年、综合能源消费和范围一、范围二、工业过程排放。未通过门槛时只生成补数任务和措施指南。</p><h2>项目组合</h2><p>项目以投资、年度减排、年度收益、运维、寿命、实施年份、前置关系和互斥关系为输入。若存在满足目标的组合，选择净现值成本最低者；否则给出预算内最大减排组合和剩余缺口。</p><h2>开放文件</h2><ul><li>CSV：园区名录、字段、标准和措施；</li><li>JSONL：滚动公开档案；</li><li>JSON：页面快照和计算结果；</li><li>HTML/Markdown：自动日报、周报和可行性报告。</li></ul><h2>安全边界</h2><p>采集器只访问正常公开页面，不绕过登录、验证码、付费墙或限流。公开仓库不应保存企业敏感台账、合同价格、个人信息和密钥。</p><p><a class="btn btn-dark" href="user-manual.html">查看使用说明</a></p></main></body></html>
