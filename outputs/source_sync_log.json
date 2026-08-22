@@ -12,8 +12,8 @@
       "start_url": "https://www.ndrc.gov.cn/fggz/",
       "status": "ok",
       "records": 0,
-      "elapsed_seconds": 1.05,
-      "attempted_at": "2026-08-21T19:33:53+00:00",
+      "elapsed_seconds": 1.33,
+      "attempted_at": "2026-08-22T03:11:29+00:00",
       "error": ""
     },
     {
@@ -22,8 +22,8 @@
       "start_url": "https://www.ndrc.gov.cn/xxgk/zcfb/tz/",
       "status": "ok",
       "records": 7,
-      "elapsed_seconds": 3.74,
-      "attempted_at": "2026-08-21T19:33:57+00:00",
+      "elapsed_seconds": 4.3,
+      "attempted_at": "2026-08-22T03:11:34+00:00",
       "error": ""
     },
     {
@@ -32,8 +32,8 @@
       "start_url": "https://www.nea.gov.cn/",
       "status": "ok",
       "records": 2,
-      "elapsed_seconds": 2.27,
-      "attempted_at": "2026-08-21T19:34:00+00:00",
+      "elapsed_seconds": 2.33,
+      "attempted_at": "2026-08-22T03:11:36+00:00",
       "error": ""
     },
     {
@@ -42,8 +42,8 @@
       "start_url": "https://www.miit.gov.cn/",
       "status": "ok",
       "records": 2,
-      "elapsed_seconds": 4.02,
-      "attempted_at": "2026-08-21T19:34:04+00:00",
+      "elapsed_seconds": 3.38,
+      "attempted_at": "2026-08-22T03:11:40+00:00",
       "error": ""
     },
     {
@@ -52,8 +52,8 @@
       "start_url": "https://www.mofcom.gov.cn/",
       "status": "ok",
       "records": 1,
-      "elapsed_seconds": 2.03,
-      "attempted_at": "2026-08-21T19:34:07+00:00",
+      "elapsed_seconds": 0.43,
+      "attempted_at": "2026-08-22T03:11:41+00:00",
       "error": ""
     },
     {
@@ -62,8 +62,8 @@
       "start_url": "https://fgw.beijing.gov.cn/",
       "status": "ok",
       "records": 1,
-      "elapsed_seconds": 3.3,
-      "attempted_at": "2026-08-21T19:34:10+00:00",
+      "elapsed_seconds": 3.15,
+      "attempted_at": "2026-08-22T03:11:44+00:00",
       "error": ""
     },
     {
@@ -72,8 +72,8 @@
       "start_url": "https://kfqgw.beijing.gov.cn/zwgkkfq/",
       "status": "ok",
       "records": 31,
-      "elapsed_seconds": 9.04,
-      "attempted_at": "2026-08-21T19:34:20+00:00",
+      "elapsed_seconds": 7.86,
+      "attempted_at": "2026-08-22T03:11:52+00:00",
       "error": ""
     },
     {
@@ -83,7 +83,7 @@
       "status": "skipped_quarantine",
       "records": 0,
       "elapsed_seconds": 0,
-      "attempted_at": "2026-08-21T19:34:20+00:00",
+      "attempted_at": "2026-08-22T03:11:53+00:00",
       "error": "source is quarantined and awaiting scheduled retest"
     },
     {
@@ -92,8 +92,8 @@
       "start_url": "https://drc.gd.gov.cn/",
       "status": "ok",
       "records": 3,
-      "elapsed_seconds": 9.18,
-      "attempted_at": "2026-08-21T19:34:29+00:00",
+      "elapsed_seconds": 6.83,
+      "attempted_at": "2026-08-22T03:11:59+00:00",
       "error": ""
     },
     {
@@ -102,8 +102,8 @@
       "start_url": "https://gxt.fujian.gov.cn/zwgk/xw/hydt/xydt/",
       "status": "ok",
       "records": 2,
-      "elapsed_seconds": 8.93,
-      "attempted_at": "2026-08-21T19:34:38+00:00",
+      "elapsed_seconds": 7.34,
+      "attempted_at": "2026-08-22T03:12:07+00:00",
       "error": ""
     },
     {
@@ -112,8 +112,8 @@
       "start_url": "https://www.gov.cn/zhengce/",
       "status": "ok",
       "records": 0,
-      "elapsed_seconds": 1.19,
-      "attempted_at": "2026-08-21T19:34:40+00:00",
+      "elapsed_seconds": 1.08,
+      "attempted_at": "2026-08-22T03:12:09+00:00",
       "error": ""
     },
     {
@@ -122,20 +122,20 @@
       "start_url": "https://www.mee.gov.cn/",
       "status": "ok",
       "records": 1,
-      "elapsed_seconds": 1.07,
-      "attempted_at": "2026-08-21T19:34:41+00:00",
+      "elapsed_seconds": 1.0,
+      "attempted_at": "2026-08-22T03:12:10+00:00",
       "error": ""
     }
   ],
   "source_health": {
-    "updated_at": "2026-08-21T19:34:41+00:00",
+    "updated_at": "2026-08-22T03:12:10+00:00",
     "sources": {
       "SRC001": {
         "source_name": "国家发展改革委—发展改革工作",
         "status": "healthy",
         "consecutive_failures": 0,
-        "last_attempt": "2026-08-21T19:33:53+00:00",
-        "last_success": "2026-08-21T19:33:53+00:00",
+        "last_attempt": "2026-08-22T03:11:29+00:00",
+        "last_success": "2026-08-22T03:11:29+00:00",
         "last_record_count": 0,
         "last_error": "",
         "start_url": "https://www.ndrc.gov.cn/fggz/"
@@ -144,8 +144,8 @@
         "source_name": "国家发展改革委—政策通知",
         "status": "healthy",
         "consecutive_failures": 0,
-        "last_attempt": "2026-08-21T19:33:57+00:00",
-        "last_success": "2026-08-21T19:33:57+00:00",
+        "last_attempt": "2026-08-22T03:11:34+00:00",
+        "last_success": "2026-08-22T03:11:34+00:00",
         "last_record_count": 7,
         "last_error": "",
         "start_url": "https://www.ndrc.gov.cn/xxgk/zcfb/tz/"
@@ -154,8 +154,8 @@
         "source_name": "国家能源局",
         "status": "healthy",
         "consecutive_failures": 0,
-        "last_attempt": "2026-08-21T19:34:00+00:00",
-        "last_success": "2026-08-21T19:34:00+00:00",
+        "last_attempt": "2026-08-22T03:11:36+00:00",
+        "last_success": "2026-08-22T03:11:36+00:00",
         "last_record_count": 2,
         "last_error": "",
         "start_url": "https://www.nea.gov.cn/"
@@ -164,8 +164,8 @@
         "source_name": "工业和信息化部",
         "status": "healthy",
         "consecutive_failures": 0,
-        "last_attempt": "2026-08-21T19:34:04+00:00",
-        "last_success": "2026-08-21T19:34:04+00:00",
+        "last_attempt": "2026-08-22T03:11:40+00:00",
+        "last_success": "2026-08-22T03:11:40+00:00",
         "last_record_count": 2,
         "last_error": "",
         "start_url": "https://www.miit.gov.cn/"
@@ -174,8 +174,8 @@
         "source_name": "商务部—开发区工作",
         "status": "healthy",
         "consecutive_failures": 0,
-        "last_attempt": "2026-08-21T19:34:07+00:00",
-        "last_success": "2026-08-21T19:34:07+00:00",
+        "last_attempt": "2026-08-22T03:11:41+00:00",
+        "last_success": "2026-08-22T03:11:41+00:00",
         "last_record_count": 1,
         "last_error": "",
         "start_url": "https://www.mofcom.gov.cn/"
@@ -184,8 +184,8 @@
         "source_name": "北京市发展改革委",
         "status": "healthy",
         "consecutive_failures": 0,
-        "last_attempt": "2026-08-21T19:34:10+00:00",
-        "last_success": "2026-08-21T19:34:10+00:00",
+        "last_attempt": "2026-08-22T03:11:44+00:00",
+        "last_success": "2026-08-22T03:11:44+00:00",
         "last_record_count": 1,
         "last_error": "",
         "start_url": "https://fgw.beijing.gov.cn/"
@@ -194,8 +194,8 @@
         "source_name": "北京经济技术开发区",
         "status": "healthy",
         "consecutive_failures": 0,
-        "last_attempt": "2026-08-21T19:34:20+00:00",
-        "last_success": "2026-08-21T19:34:20+00:00",
+        "last_attempt": "2026-08-22T03:11:52+00:00",
+        "last_success": "2026-08-22T03:11:52+00:00",
         "last_record_count": 31,
         "last_error": "",
         "start_url": "https://kfqgw.beijing.gov.cn/zwgkkfq/"
@@ -214,8 +214,8 @@
         "source_name": "广东省发展改革委",
         "status": "healthy",
         "consecutive_failures": 0,
-        "last_attempt": "2026-08-21T19:34:29+00:00",
-        "last_success": "2026-08-21T19:34:29+00:00",
+        "last_attempt": "2026-08-22T03:11:59+00:00",
+        "last_success": "2026-08-22T03:11:59+00:00",
         "last_record_count": 3,
         "last_error": "",
         "start_url": "https://drc.gd.gov.cn/"
@@ -224,8 +224,8 @@
         "source_name": "福建省工业和信息化厅",
         "status": "healthy",
         "consecutive_failures": 0,
-        "last_attempt": "2026-08-21T19:34:38+00:00",
-        "last_success": "2026-08-21T19:34:38+00:00",
+        "last_attempt": "2026-08-22T03:12:07+00:00",
+        "last_success": "2026-08-22T03:12:07+00:00",
         "last_record_count": 2,
         "last_error": "",
         "start_url": "https://gxt.fujian.gov.cn/zwgk/xw/hydt/xydt/"
@@ -234,8 +234,8 @@
         "source_name": "中国政府网—政策",
         "status": "healthy",
         "consecutive_failures": 0,
-        "last_attempt": "2026-08-21T19:34:40+00:00",
-        "last_success": "2026-08-21T19:34:40+00:00",
+        "last_attempt": "2026-08-22T03:12:09+00:00",
+        "last_success": "2026-08-22T03:12:09+00:00",
         "last_record_count": 0,
         "last_error": "",
         "start_url": "https://www.gov.cn/zhengce/"
@@ -244,8 +244,8 @@
         "source_name": "生态环境部",
         "status": "healthy",
         "consecutive_failures": 0,
-        "last_attempt": "2026-08-21T19:34:41+00:00",
-        "last_success": "2026-08-21T19:34:41+00:00",
+        "last_attempt": "2026-08-22T03:12:10+00:00",
+        "last_success": "2026-08-22T03:12:10+00:00",
         "last_record_count": 1,
         "last_error": "",
         "start_url": "https://www.mee.gov.cn/"
