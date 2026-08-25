@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-08-25T08:24:36+00:00",
+  "generated_at": "2026-08-25T14:31:32+00:00",
   "output_dir": "/home/runner/work/zero-carbon-park/zero-carbon-park/site",
-  "archive_records": 93,
+  "archive_records": 97,
   "reports": [
     {
       "type": "daily",
@@ -9,7 +9,7 @@
       "html": "reports/daily-latest.html",
       "markdown": "reports/daily-latest.md",
       "json": "reports/daily-latest.json",
-      "record_count": 12
+      "record_count": 5
     },
     {
       "type": "weekly",
@@ -17,7 +17,7 @@
       "html": "reports/weekly-latest.html",
       "markdown": "reports/weekly-latest.md",
       "json": "reports/weekly-latest.json",
-      "record_count": 23
+      "record_count": 27
     },
     {
       "type": "feasibility",
@@ -31,7 +31,7 @@
   "dashboard_counts": {
     "domestic_parks": 67,
     "international_cases": 12,
-    "archive_records": 93,
+    "archive_records": 97,
     "required_fields": 50,
     "technology_measures": 66,
     "standard_rules": 15,
