@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-17T20:53:00+00:00",
+  "generated_at": "2026-11-18T07:24:52+00:00",
   "output_dir": "/home/runner/work/zero-carbon-park/zero-carbon-park/site",
-  "archive_records": 307,
+  "archive_records": 313,
   "reports": [
     {
       "type": "daily",
@@ -31,7 +31,7 @@
   "dashboard_counts": {
     "domestic_parks": 67,
     "international_cases": 12,
-    "archive_records": 307,
+    "archive_records": 313,
     "required_fields": 50,
     "technology_measures": 66,
     "standard_rules": 15,
